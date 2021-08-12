@@ -15,10 +15,23 @@ public class LandingPage {
 	}
 	
 	By login=By.xpath("//span[contains(text(),'Login')]");
+	By Title=By.xpath("//div/h2[contains(text(),'Featured Courses')]");
+	By contacts=By.xpath("//a[contains(text(),'Contact')]");
 	public WebElement signin()
 	
 	{
 		return driver.findElement(login);
 	}
+public WebElement getTitle()
+	
+	{
+		return driver.findElement(Title);
+	}
+
+public WebElement getContacts()
+
+{
+	return driver.findElement(contacts);
+}
 
 }

@@ -5,7 +5,9 @@
     <classes>
       <class name="Login.LoginPage">
         <methods>
-          <include name="getemailpwd" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="getemailpwd" invocation-numbers="0 1"/>
+          <include name="iniDriver"/>
         </methods>
       </class> <!-- Login.LoginPage -->
     </classes>

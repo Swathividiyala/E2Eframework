@@ -4,6 +4,9 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Login.LoginPage"/>
+       <class name="Login.PageTitle"/>
+       <class name="Login.ValidateNavigation"/>
+       
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
