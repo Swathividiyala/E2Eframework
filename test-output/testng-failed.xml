@@ -5,7 +5,7 @@
     <classes>
       <class name="Login.LoginPage">
         <methods>
-          <include name="getemailpwd"/>
+          <include name="getemailpwd" invocation-numbers="0"/>
         </methods>
       </class> <!-- Login.LoginPage -->
     </classes>

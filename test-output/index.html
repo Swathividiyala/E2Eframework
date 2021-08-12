@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse--1502859600\testng-customsuite.xml</span>
+                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-2022064959\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="getemailpwd">getemailpwd</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="getemailpwd(vidiyala@gmail.com, manasa)">getemailpwd(vidiyala@gmail.com, manasa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="getemailpwd(vidiyala@gail.com, vidiyala)">getemailpwd(vidiyala@gail.com, vidiyala)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,9 +142,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getemailpwd">
-                  </a> <!-- getemailpwd -->
+                  <a name="getemailpwd(vidiyala@gmail.com, manasa)">
+                  </a> <!-- getemailpwd(vidiyala@gmail.com, manasa) -->
                   <span class="method-name">getemailpwd</span>
+                  <span class="parameters">(vidiyala@gmail.com, manasa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getemailpwd(vidiyala@gail.com, vidiyala)">
+                  </a> <!-- getemailpwd(vidiyala@gail.com, vidiyala) -->
+                  <span class="method-name">getemailpwd</span>
+                  <span class="parameters">(vidiyala@gail.com, vidiyala)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -161,7 +175,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse--1502859600\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-2022064959\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -210,24 +224,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logintoapp')
 data.setCell(0, 2, 'Login.LoginPage')
-data.setCell(0, 3, 6357);
+data.setCell(0, 3, 6850);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'signtoapp')
 data.setCell(1, 2, 'Login.LoginPage')
-data.setCell(1, 3, 818);
+data.setCell(1, 3, 708);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getemailpwd')
 data.setCell(2, 2, 'Login.LoginPage')
-data.setCell(2, 3, 570);
+data.setCell(2, 3, 549);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getemailpwd')
+data.setCell(3, 2, 'Login.LoginPage')
+data.setCell(3, 3, 458);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -260,11 +278,15 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">signtoapp</span>
-                <span class="method-start">6368 ms</span>
+                <span class="method-start">6861 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getemailpwd</span>
-                <span class="method-start">7189 ms</span>
+                <span class="method-name">getemailpwd(vidiyala@gmail.com, manasa)</span>
+                <span class="method-start">13586 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getemailpwd(vidiyala@gail.com, vidiyala)</span>
+                <span class="method-start">14137 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
