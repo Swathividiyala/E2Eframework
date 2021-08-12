@@ -1,0 +1,8 @@
+23:32:50.066 [main] INFO  Login.LoginPage - Diver is launched
+23:35:56.417 [main] INFO  Login.LoginPage - Diver is launched
+23:36:06.552 [main] INFO  Login.PageTitle - Validated the get text
+23:36:06.685 [main] INFO  Login.ValidateNavigation - Validated the navigationlink
+23:52:02.775 [main] INFO  Login.LoginPage - Diver is launched
+23:52:16.555 [main] INFO  Login.PageTitle - Validated the get text
+23:52:22.499 [main] INFO  Login.ValidateNavigation - Validated the navigationlink
+23:55:16.171 [TestNG-tests-3] INFO  Login.ValidateNavigation - Validated the navigationlink

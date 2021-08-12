@@ -1,12 +1,18 @@
-package PageObject;
+package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
+import org.apache.commons.io.FileUtils;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -50,5 +56,11 @@ public class BaseClass {
 	    return driver;
 	}
 	
-	
+	public void getScreenshot(String testcasename, WebDriver driver) throws IOException
+	{
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		String destinationfile=System.getProperty("user.dir")+"\\Reports\\"+testcasename+".png";	
+		FileUtils.copyFile(source, new File(destinationfile));
+	}
 }

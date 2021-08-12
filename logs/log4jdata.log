@@ -1,0 +1,6 @@
+00:55:38.771 [TestNG-tests-1] INFO  Login.LoginPage - Diver is launched
+00:55:39.890 [TestNG-tests-3] INFO  Login.ValidateNavigation - Validated the navigationlink
+00:55:39.891 [TestNG-tests-3] INFO  Login.ValidateNavigation - Test is completed
+00:57:36.341 [TestNG-tests-3] INFO  Login.ValidateNavigation - Validated the navigationlink
+00:57:36.343 [TestNG-tests-3] INFO  Login.ValidateNavigation - Test is completed
+00:57:36.641 [TestNG-tests-1] INFO  Login.LoginPage - Diver is launched

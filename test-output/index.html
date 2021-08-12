@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,17 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="getemailpwd(vidiyala@gmail.com, manasa)">getemailpwd(vidiyala@gmail.com, manasa)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="getemailpwd(vidiyala@gail.com, vidiyala)">getemailpwd(vidiyala@gail.com, vidiyala)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="signtoapp">signtoapp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Login.PageTitle" class="method navigator-link" hash-for-method="logintoapp">logintoapp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -128,12 +118,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Login.PageTitle" class="method navigator-link" hash-for-method="logintoapp">logintoapp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="getemailpwd(vidiyala@gail.com, vidiyala)">getemailpwd(vidiyala@gail.com, vidiyala)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="getemailpwd(vidiyala@gmail.com, manasa)">getemailpwd(vidiyala@gmail.com, manasa)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Login.ValidateNavigation" class="method navigator-link" hash-for-method="navigateContacts">navigateContacts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Login.LoginPage" class="method navigator-link" hash-for-method="signtoapp">signtoapp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -151,104 +151,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Login.LoginPage</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getemailpwd(vidiyala@gmail.com, manasa)">
-                  </a> <!-- getemailpwd(vidiyala@gmail.com, manasa) -->
-                  <span class="method-name">getemailpwd</span>
-                  <span class="parameters">(vidiyala@gmail.com, manasa)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos; password&apos;]&quot;}
-  (Session info: chrome=92.0.4515.131)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;WINDOWS-RM6RKV3&apos;, ip: &apos;192.168.1.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8554f913e9eb1a0a925cc4c9e2984b07
-*** Element info: {Using=name, value= password}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at homePage.SigningPage.getpassword(SigningPage.java:28)
-	at Login.LoginPage.getemailpwd(LoginPage.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getemailpwd(vidiyala@gail.com, vidiyala)">
-                  </a> <!-- getemailpwd(vidiyala@gail.com, vidiyala) -->
-                  <span class="method-name">getemailpwd</span>
-                  <span class="parameters">(vidiyala@gail.com, vidiyala)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos; password&apos;]&quot;}
-  (Session info: chrome=92.0.4515.131)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;WINDOWS-RM6RKV3&apos;, ip: &apos;192.168.1.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8554f913e9eb1a0a925cc4c9e2984b07
-*** Element info: {Using=name, value= password}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at homePage.SigningPage.getpassword(SigningPage.java:28)
-	at Login.LoginPage.getemailpwd(LoginPage.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="signtoapp">
-                  </a> <!-- signtoapp -->
-                  <span class="method-name">signtoapp</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (1335, 16). Other element would receive the click: &lt;div class=&quot;listbuilder-popup-content&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=92.0.4515.131)
-Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
-System info: host: &apos;WINDOWS-RM6RKV3&apos;, ip: &apos;192.168.1.17&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8554f913e9eb1a0a925cc4c9e2984b07
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at Login.LoginPage.signtoapp(LoginPage.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">Login.PageTitle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -257,6 +159,46 @@ Session ID: 8554f913e9eb1a0a925cc4c9e2984b07
                   <a name="logintoapp">
                   </a> <!-- logintoapp -->
                   <span class="method-name">logintoapp</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [FEATURED COURsES] but found [FEATURED COURSES]
+	at Login.PageTitle.logintoapp(PageTitle.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Login.LoginPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getemailpwd(vidiyala@gail.com, vidiyala)">
+                  </a> <!-- getemailpwd(vidiyala@gail.com, vidiyala) -->
+                  <span class="method-name">getemailpwd</span>
+                  <span class="parameters">(vidiyala@gail.com, vidiyala)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getemailpwd(vidiyala@gmail.com, manasa)">
+                  </a> <!-- getemailpwd(vidiyala@gmail.com, manasa) -->
+                  <span class="method-name">getemailpwd</span>
+                  <span class="parameters">(vidiyala@gmail.com, manasa)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signtoapp">
+                  </a> <!-- signtoapp -->
+                  <span class="method-name">signtoapp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -285,14 +227,25 @@ Session ID: 8554f913e9eb1a0a925cc4c9e2984b07
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Login.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Login home page&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Login.LoginPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login home page --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Validating the title&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;Login.PageTitle&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validating the title --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Validating navigation bar&quot;&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;Login.ValidateNavigation&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Validating navigation bar --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -304,7 +257,13 @@ Session ID: 8554f913e9eb1a0a925cc4c9e2984b07
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Login home page (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating the title (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validating navigation bar (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -332,30 +291,30 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getemailpwd')
+data.setCell(0, 1, 'signtoapp')
 data.setCell(0, 2, 'Login.LoginPage')
-data.setCell(0, 3, 20583);
+data.setCell(0, 3, 11172);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getemailpwd')
 data.setCell(1, 2, 'Login.LoginPage')
-data.setCell(1, 3, 20228);
+data.setCell(1, 3, 3524);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signtoapp')
+data.setCell(2, 1, 'getemailpwd')
 data.setCell(2, 2, 'Login.LoginPage')
-data.setCell(2, 3, 1286);
+data.setCell(2, 3, 3371);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'navigateContacts')
-data.setCell(3, 2, 'Login.ValidateNavigation')
-data.setCell(3, 3, 105);
+data.setCell(3, 1, 'logintoapp')
+data.setCell(3, 2, 'Login.PageTitle')
+data.setCell(3, 3, 301);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'logintoapp')
-data.setCell(4, 2, 'Login.PageTitle')
-data.setCell(4, 3, 43);
+data.setCell(4, 1, 'navigateContacts')
+data.setCell(4, 2, 'Login.ValidateNavigation')
+data.setCell(4, 3, 150);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 42 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -391,70 +350,63 @@ return data;
               <div class="chronological-class-name">Login.PageTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">iniDriver</span>
-                <span class="method-start">6172 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Login.ValidateNavigation</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">iniDriver</span>
-                <span class="method-start">11734 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Login.LoginPage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">signtoapp</span>
-                <span class="method-start">20493 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getemailpwd(vidiyala@gmail.com, manasa)</span>
-                <span class="method-start">21824 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">getemailpwd(vidiyala@gail.com, vidiyala)</span>
-                <span class="method-start">42415 ms</span>
+                <span class="method-start">4650 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Login.PageTitle</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">logintoapp</span>
-                <span class="method-start">62647 ms</span>
+                <span class="method-start">13625 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Login.ValidateNavigation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">navigateContacts</span>
-                <span class="method-start">62693 ms</span>
+                <span class="method-start">14378 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Login.LoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">62799 ms</span>
+                <span class="method-start">14534 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Login.PageTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">66950 ms</span>
+                <span class="method-start">15278 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">Login.ValidateNavigation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Login.LoginPage</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getemailpwd(vidiyala@gmail.com, manasa)</span>
+                <span class="method-start">15832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getemailpwd(vidiyala@gail.com, vidiyala)</span>
+                <span class="method-start">19359 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">67064 ms</span>
+                <span class="method-start">22735 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

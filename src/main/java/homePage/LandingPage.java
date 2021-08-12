@@ -14,7 +14,9 @@ public class LandingPage {
 		this.driver=driver;
 	}
 	
-	By login=By.xpath("//span[contains(text(),'Login')]");
+	//By login=By.xpath("//span[contains(text(),'Login')]");
+	By login=By.cssSelector("a[href*='sign_in']");
+	
 	By Title=By.xpath("//div/h2[contains(text(),'Featured Courses')]");
 	By contacts=By.xpath("//a[contains(text(),'Contact')]");
 	public WebElement signin()
